@@ -1,3 +1,4 @@
+# Bai 4:
 class Hoa:
     def __init__(self, ten, mau):
         self.ten = ten
