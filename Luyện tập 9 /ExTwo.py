@@ -1,0 +1,5 @@
+print("--- CHẠY BÀI 2 ---")
+n = input("Nhập vào một số để tính tổng các chữ số: ")
+tong = sum(int(char) for char in n if char.isdigit())
+print(f"Tổng các chữ số là: {tong}")
+print("-" * 30)
