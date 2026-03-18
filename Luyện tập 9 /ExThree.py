@@ -1,0 +1,5 @@
+print("--- CHẠY BÀI 3 ---")
+ten = input("Nhập tên cần chuẩn hóa: ")
+ten_chuan_hoa = " ".join(word.capitalize() for word in ten.split())
+print(f"Tên sau khi chuẩn hóa: {ten_chuan_hoa}")
+print("-" * 30)
