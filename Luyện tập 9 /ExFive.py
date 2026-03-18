@@ -1,3 +1,4 @@
+print("--- CHẠY BÀI 5 ---")
 class User:
     def __init__(self, user_id):
         self._id = user_id
