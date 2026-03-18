@@ -1,14 +1,13 @@
+print("--- CHẠY BÀI 10 ---")
 class SinhVien:
     def __init__(self, diem):
         self.diem = diem
 
-    # Nạp chồng toán tử == (so sánh bằng)
     def __eq__(self, other):
         if isinstance(other, SinhVien):
             return self.diem == other.diem
         return False
 
-# ----- CHẠY THỬ BÀI 10 -----
 print("--- KẾT QUẢ BÀI 10 ---")
 sv1 = SinhVien(8.5)
 sv2 = SinhVien(8.5)
