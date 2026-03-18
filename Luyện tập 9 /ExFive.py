@@ -1,18 +1,12 @@
-print("--- CHẠY BÀI 4 ---")
-s = input("Nhập vào một chuỗi bất kỳ: ")
-hoa = sum(1 for c in s if c.isupper())
-thuong = sum(1 for c in s if c.islower())
-so = sum(1 for c in s if c.isdigit())
-trang = sum(1 for c in s if c.isspace())
-dac_biet = sum(1 for c in s if not c.isalnum() and not c.isspace())
-nguyen_am = sum(1 for c in s if c.isalpha() and c.lower() in 'aeiou')
-phu_am = sum(1 for c in s if c.isalpha() and c.lower() not in 'aeiou')
+class User:
+    def __init__(self, user_id):
+        self._id = user_id
 
-print(f"- Số lượng chữ cái in hoa: {hoa}")
-print(f"- Số lượng chữ cái in thường: {thuong}")
-print(f"- Số lượng chữ số: {so}")
-print(f"- Số lượng ký tự đặc biệt: {dac_biet}")
-print(f"- Số lượng ký tự khoảng trắng: {trang}")
-print(f"- Số lượng nguyên âm: {nguyen_am}")
-print(f"- Số lượng phụ âm: {phu_am}")
-print("-" * 30)
+    @property 
+    def id(self): 
+        return self._id
+
+print("--- KẾT QUẢ BÀI 5 ---")
+nguoi_dung = User("SV_CMC_001")
+print(f"ID của người dùng là: {nguoi_dung.id}")
+print("---------------------")
