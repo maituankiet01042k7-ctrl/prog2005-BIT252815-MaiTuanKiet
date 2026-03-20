@@ -1,0 +1,18 @@
+import matplotlib.pyplot as plt
+import numpy as np
+import pandas as pd
+
+# Bài 2
+# ==========================================
+x = np.linspace(-10, 10, 400)
+y1 = x**2
+y2 = x**3
+
+plt.figure(figsize=(8, 5))
+plt.plot(x, y1, color='blue', label='y = x^2')
+plt.plot(x, y2, color='red', label='y = x^3')
+plt.title('Đồ thị các hàm số')
+plt.xlabel('x')
+plt.ylabel('y')
+plt.legend()
+plt.show()
